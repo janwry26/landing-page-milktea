@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: black;
+}
+
+
+.logo img{
+    width: 70px;
+    height: 100%;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	font-weight: bold;
+	color: black;
+	z-index: 999;
+    overflow-x: hidden;
+    background-color: rgba(235, 231, 227, 0.993);
+
+}
+
+nav a {
+	margin: 0 6rem;
+	text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    overflow-x: hidden;
+    color: rgb(121, 93, 57);
+    
+}
+
+nav a:hover {
+	color: #363634;
+	
+	transition: all 0.3s;
+}
+
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+    display: flex;
+	align-items: center;
+	z-index: 1000;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+    header{
+        justify-content: space-between;
+        
+    }
+
+
+	header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: rgba(231, 224, 216, 0.993);
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+
+	header .responsive_nav {
+		transform: none;
+		z-index: 100;
+	}
+	
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 0.7rem;
+		right: 2rem;  
+	}
+
+	nav a {
+		font-size: 1.5rem;
+		
+	}
+	nav a:hover{
+		color: #5383d3;
+		transition: all 0.3s;
+	}
+}
