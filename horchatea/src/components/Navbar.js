@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/navbar.css";
 import logo from '../assets/logo.png';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 function Navbar() {
 	const navRef = useRef();
 
@@ -22,9 +23,9 @@ function Navbar() {
             </div>
 			<nav ref={navRef}>
 				<a href="#home" onClick={handleLinkClick}>Home</a>
-				<a href="#topic" onClick={handleLinkClick}>Topic</a>
-				<a href="#team" onClick={handleLinkClick}>Team</a>
-				<a href="#about" onClick={handleLinkClick}>About</a>
+				<a href="#topic" onClick={handleLinkClick}>Services</a>
+				<a href="#team" onClick={handleLinkClick}>About Us</a>
+				<a href="#about" onClick={handleLinkClick}>Contact</a>
 				<button className="nav-btn nav-close-btn" onClick={showNavbar}>
 					<FaTimes />
 				</button>
