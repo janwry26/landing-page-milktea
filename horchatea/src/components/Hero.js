@@ -6,61 +6,48 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 function Hero(){
     return(
         <section className='hero-section' id='home'>
-            
-          <div className="container px-5 hero-container">
-            <div className="row gx-5">
-                <div className="col-lg-6  hero-paragraph" data-aos="zoom-in-right"  data-aos-duration="1000">
-                   <div className='row my-3 mx-2 '>
-                        <div className='col-lg-12'>
-                            <p className='title'>
-                               <span>HORCHATEA</span>
-                            </p>
+
+        <div className="container px-5 hero-container">
+            <div className="row gx-5 ">
+                <div className="col-lg-6 text-container">
+                    <div className='row'>
+                        <div className='col-lg-12 title'>
+                            <span>HORCHATEA </span>
                         </div>
-                        <div className='col-lg-12 description'>
-                            <p >
+                        <div className='col-sm-12 description d-flex justify-content-center'>
+                            <p className='text-center description'>
                             Horchatea is a kind of milk tea that is made of rice. Aside from that, we have different offers.
                             </p>
                         </div>
-           
-                    <button class="cta">
-                        <span class="hover-underline-animation">Order now</span>
-                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
-                            <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
-                        </svg>
-                    </button>
-                    <div className='icons'>
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <FaFacebook size={32} />
-                        </a>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <FaInstagram size={32} />
-                        </a>
-                        <a href="https://twitter.com/" target="_blank">
-                            <FaTwitter size={32} />
-                        </a>
+                        <div className='col-sm-12 col-lg-12 d-flex justify-content-center'>
+                        <button className='bttn'> <span>Order Now</span></button>
+                        </div>
+                        <div className='col-sm-12 col-lg-12 d-flex justify-content-center'>
+                        <div className='social-icons'>
+                            <FaFacebook className='social-icon'/>
+                            <FaInstagram className='social-icon'/>
+                            <FaTwitter className='social-icon'/>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-lg-6 img-container">
+                    <div class="grid-container ">
+                        <div class="grid-item"> <img className='img-fluid left' src={left}/></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"> <img className='img-fluid hero-img' src={hero}/></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"> <img className='img-fluid right' src={right}/></div>
+                    </div>
+                </div>
+            </div>
         </div>
-                 
-                   </div>
-                </div>
-                <div className="col-lg-6 col-md-12 img-container">
-                    
-                       <img className='img-fluid' alt="hero-pic" src={hero}/>
-                        
-                </div>
-                <div className="col-lg-6 col-md-12 img-container1">
-                    
-                    <img className='img-fluid' alt="hero-pic" src={hero}/>
-               
-             </div>
-             <div className='left-img'>
-                <img className='left' src={left}/>
-                </div>
-                <div className='right-img'>
-                <img className='right' src={right}/>
-            </div>
-          
-            </div>
-          </div>
+            
+         
         </section>
     )
 }

@@ -25,7 +25,6 @@ header {
 	font-weight: bold;
 	color: black;
 	z-index: 999;
-    overflow-x: hidden;
     background-color: rgba(235, 231, 227, 0.993);
 
 }
@@ -34,7 +33,7 @@ nav a {
 	margin: 0 6rem;
 	text-decoration: none;
     font-family: 'Montserrat';
-    font-size: 30px;
+    font-size: 25px;
     overflow-x: hidden;
     color: rgb(121, 93, 57);
     
